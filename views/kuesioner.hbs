@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Afiliate Binus - SMK Bina Nusantara Semarang</title>
+  <link rel="stylesheet" type="text/css" href="assets/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"> 
+  <style>
+    /* fallback */
+    @font-face {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      src: url(assets/material-icons.woff2) format('woff2');
+    }
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="pictures/bgsidenav.jpg" class="responsive-img">
+        </div>
+        <a href="#user"><img class="circle" src="/pictures/default-pp.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="/dashboard" class="hoverable">Dashboard</a></li>
+    <li><a href="/data-guru" class="hoverable">Data Guru</a></li>
+    <li><a href="/data-siswa-partisipan" class="hoverable">Data Siswa Partisipan</a></li>
+    <li><a href="/data-siswa-baru" class="hoverable">Data Siswa Baru</a></li>
+    <li><a href="/data-calon-siswa" class="hoverable">Data Calon Siswa</a></li>
+    <li><a href="/kuesioner" class="hoverable">Kuesioner</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="#!" class="hoverable">Logout</a></li>
+  </ul>
+  <div class="row teal z-depth-2">
+    <div class="col s6 ">
+      <a href="#" data-target="slide-out" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+    </div>
+    <div class="col s6 right-align">
+      <a class="dropdown-trigger white-text" href="#" data-target="dropdown1"><i class="material-icons right">arrow_drop_down_circle</i>Admin</a>
+      <ul id="dropdown1" class="dropdown-content" style="width: 300px;">
+        <li><a href="/pengaturan">Setting</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h5>KUESIONER</h5><hr/>
+      </div>
+      <div class="col s12 right-align">
+        <a class="waves-effect waves-light btn z-depth-2 hoverable orange darken-4"><i class="material-icons center">add</i></a>
+        <a class="waves-effect waves-light btn z-depth-2 hoverable green darken-4"><i class="material-icons center">print</i></a>
+        <a class="waves-effect waves-light btn z-depth-2 hoverable deep-purple darken-4"><i class="material-icons center">file_download</i></a><br/><br/>
+      </div>
+      <div class="col s12">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 5%;">NO</th>
+              <th style="width: 40%;">PERTANYAAN</th>
+              <th style="width: 40%;">PILIHAN</th>
+              <th style="width: 15%;">ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 5%;">1.</td>
+              <td style="width: 40%;">Apa yang menjadi alasan anda untuk bergabung di SMK Bina Nusantara Semarang?</td>
+              <td style="width: 40%;">a. Ikut Teman <br/>b. Anjuran Orangtua <br/>c. Diri Sendiri</td>
+              <td style="width: 15%;">
+                <a class="btn-floating btn waves-effect waves-light orange"><i class="material-icons">edit</i></a>
+                <a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 5%;">2.</td>
+              <td style="width: 40%;">Apa kelebihan dari SMK Bina Nusantara Semarang?</td>
+              <td style="width: 40%;">a. Fasilitas Bagus 
+                <br/>b. Guru Ramah 
+                <br/>c. Benar Semua
+              </td>
+              <td style="width: 15%;">
+                <a class="btn-floating btn waves-effect waves-light orange"><i class="material-icons">edit</i></a>
+                <a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 5%;">3.</td>
+              <td style="width: 40%;">Apakah anda merekomendasikan SMK Bina Nusantara Semarang kepada teman-teman / keluarga?</td>
+              <td style="width: 40%;">a. Ya <br/>b. Tidak <br/>c. Belum Memutuskan</td>
+              <td style="width: 15%;">
+                <a class="btn-floating btn waves-effect waves-light orange"><i class="material-icons">edit</i></a>
+                <a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">delete</i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+  <script src="assets/materialize.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.dropdown-trigger');
+      var instances = M.Dropdown.init(elems, options);
+    });
+  </script>
+  <script type="text/javascript">
+    M.AutoInit();
+  </script>
+</body>
+
+</html>
